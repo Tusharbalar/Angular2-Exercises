@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
         <fa-other></fa-other>
         <fa-another>
             <div>
-                <h2>Hello</h2>
+                <h1>Hello</h1>
                 <h2>Tushar!!!</h2>
             </div>
         </fa-another>
