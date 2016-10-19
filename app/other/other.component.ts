@@ -5,12 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './app/other/other.component.html'
 })
 
-export class OtherComponent implements OnInit {
+export class OtherComponent {
 
-  constructor() {}
-
-  ngOnInit() {
-
-  }
-
+  stringInterpolation = "This is string interpolation";
+  numberInterpolation = 2;
 }
