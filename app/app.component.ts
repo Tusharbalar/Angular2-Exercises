@@ -5,7 +5,12 @@ import { Component } from '@angular/core';
     template: `
         <h1>My First Angular App</h1>
         <fa-other></fa-other>
-        <fa-another></fa-another>
+        <fa-another>
+            <div>
+                <h2>Hello</h2>
+                <h2>Tushar!!!</h2>
+            </div>
+        </fa-another>
     `,
     styles: [`
         h1 {

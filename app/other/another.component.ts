@@ -2,7 +2,16 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'fa-another',
-  template: '<h2>Another Component</h2>'
+  template: `
+    <article>
+      <ng-content></ng-content>
+    </article>
+  `,
+  styles: [`
+    article {
+      border: 1px solid black
+    }
+  `]
 })
 
 export class AnotherComponent implements OnInit {
