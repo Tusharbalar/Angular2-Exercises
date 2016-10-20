@@ -21,5 +21,8 @@
 <h2>Custom event binding</h2>
 <fa-event-binding (clicked)="onClicked($event)"></fa-event-binding>
 
-<h2> Two way binding </h2>
-<fa-two-way-binding></fa-two-way-binding>
+<h2> Two way binding & Use of @Input </h2>
+<fa-two-way-binding [bindable]="boundValue"></fa-two-way-binding>
+
+
+<button (click)="boundValue = 2000">Click to change binding</button>

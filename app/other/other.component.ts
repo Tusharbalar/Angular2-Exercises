@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'fa-other',
@@ -18,4 +18,7 @@ export class OtherComponent {
   onClicked(value: string) {
     alert(value);
   }
+
+  boundValue = 4000;
+
 }
