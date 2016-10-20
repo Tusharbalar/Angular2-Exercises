@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ContentChild, AfterContentInit } from '@angular/core';
 
 @Component({
   selector: 'fa-another',
@@ -14,12 +14,19 @@ import { Component, OnInit } from '@angular/core';
   `]
 })
 
-export class AnotherComponent implements OnInit {
+export class AnotherComponent implements OnInit, AfterContentInit {
 
   constructor() {}
 
   ngOnInit() {
 
+  }
+
+  @ContentChild('boundContent')
+  boundContent: HTMLElement
+
+  ngAfterContentInit() {
+    console.log("ContentChild", this.boundContent)
   }
 
 }

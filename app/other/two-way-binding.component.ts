@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ViewChild, AfterViewInit } from '@angular/core';
 
 @Component({
   moduleId: module.id,
@@ -14,11 +14,19 @@ import { Component, Input } from '@angular/core';
   styles: []
 })
 
-export class TwoWayBindingComponent{
+export class TwoWayBindingComponent implements AfterViewInit {
   person = {
     name: "Tushar",
     age: 23
   };
 
   @Input() bindable = 1000;
+
+  @ViewChild('boundParagraph')
+  boundParagraph: HTMLElement
+
+  ngAfterViewInit() {
+    console.log("ViewChild", this.boundParagraph)
+  }
+
 }
